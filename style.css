@@ -1,0 +1,77 @@
+@import url('https://fonts.cdnfonts.com/css/inter');
+
+* {
+    font-family: 'Inter', sans-serif,Tahoma;  
+}
+body {
+    background-color: rgba(169, 152, 135, 0.982);
+    font-family: 'Inter', sans-serif;
+    letter-spacing: 1px; 
+    color: antiquewhite;                                              
+}
+
+p {
+    font-family: 'Inter';
+}
+
+.formdiv {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    min-height: 400px;
+}
+
+#formdiv1 {
+    width: 100px;
+    height: 30px;
+}
+
+#formdiv2 {
+    width: 100px;
+    height: 50px;
+    margin-left: 50px;
+
+}
+
+#formdiv2 input {
+    width: 50px;
+    height: 30px;
+}
+
+input {
+    height: 30px;
+    width: 100px;
+    margin: 10px;
+    border-radius: 3px;
+    border: none;
+}
+
+
+button {
+    background-color: aquamarine;
+    border: none;
+    width: 100px;
+    height: 35px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: antiquewhite;
+}
+
+
+#container3 {
+    position: fixed;
+    bottom: 0;
+    margin: 1% 0;
+    display: block;
+}
+
+#new-container {
+    position: absolute;
+    float: right;
+    top: 0;
+    right: 0;
+}

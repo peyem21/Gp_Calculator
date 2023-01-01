@@ -1,0 +1,38 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gp_Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="container2">
+           <form action="" id="myForm">
+                <p>UNILORIN CGPA CALCULATOR</p>
+                <label for="semester1" >Course Unit</label>
+                <label for="semester2">Grade</label>
+                <div id="formdiv" class="formdiv">
+                    <span id="formdiv1"><input type="number" id="semester1" name="semester1" placeholder="Course Unit"></span>
+                    <span id="formdiv2"><input type="text" id="semester2" name="semester2" placeholder="Grade"></span>
+                </div>
+                <div id="container3">
+                    <button type="button" id="calculate" onclick="createInput()">Add More</button>
+                    <button type="button" id="submit" onclick="getValue()" type="submit">Submit</button>
+                    <button onclick="removeInput()">Clear All</button>
+                </div>
+           </form>
+        </div> 
+        <div id="new-container">
+            <div id="container4">hello</div>
+            <div id="container5">final</div>
+            <div id="container6">result</div>
+            <div id="container7">
+                test
+            </div>
+        </div>
+        </div>
+    <script src="script.js"></script>
+</body>
+</html>
