@@ -102,11 +102,12 @@ function getValue() {
             default:
                 alert("Grade should be A,B,C,D,E or F")
         }
+        gradeValue = gradeValue * Number(semester1.value)
         inputValue += Number(sum) 
         inputTotal.push(inputValue)
-        gradeValue += Number(sum1)
+        gradeValue += Number(sum1) * Number(sum)
         gradeTotal.push(gradeValue)
-        var final = gradeValue / inputValue
+        var final = (gradeValue) / inputValue
     }
     container4.innerHTML = inputValue
     container5.innerHTML = gradeValue
