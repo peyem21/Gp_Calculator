@@ -112,7 +112,7 @@ function getValue() {
     }
     container4.innerHTML = inputValue
     container5.innerHTML = gradeValue
-    container6.textContent = final
+    container6.textContent = final.toFixed(3)
     if (Number(final) >= 4.5) {
         container7.textContent = "FirstClass"
     } else if (Number(final) >= 4.0) {
