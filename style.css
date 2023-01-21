@@ -34,17 +34,9 @@ nav {
     text-shadow: 10px 10px 10px gray;
 }
 
-/* p {
-    width: 100%;
-    height: 80px;
-    background-color: rgba(126, 111, 96, 0.982);
-    border-bottom: 1em;
-    margin: 0;
-    padding: 0;
-} */
-#label1,
-#label2 {
-    margin-bottom: 60px;
+#label1 {
+    margin: 11px;
+
 }
 
 
@@ -98,27 +90,45 @@ button:hover {
 
 
 #container3 {
-    /* left: auto; */
-    /* margin: 0 auto; */
     position: absolute;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 10px;
     bottom: 8px;
-    /* position: fixed; */
-    /* transform: translate(-50%, -50);
-    bottom: 0;
-    left: 50%; */
-    /* right: 50%; */
-/* 
-    max-width: max-content; */
 }
 
 #new-container {
+    background-color: antiquewhite;
+    border-radius: 10px;
     position: absolute;
     float: right;
     top: 100px;
     right: 1em;
-    max-width: 70px;
+    width: 150px;
+    height: 90px;
+    font-size: 15px;
+    margin-bottom: 30px;
+    color: grey;
+    /* display: flex;
+    flex-direction: column;
+    flex-wrap: wrap; */
+    /* font-style: o; */
+    text-indent: 15px;
+    text-align: center;
+    margin-left: 0;
+    /* text-shadow: 10px 10px 10px gray; */
+
+}
+
+#container4 {
+    font-weight: bold;
+    text-shadow: none;
+    color: rgba(10, 10, 0, 0.673);
+    font-size: 19px;
+    margin-bottom: 10px;
+}
+
+#container7 {
+    padding-top: 10px;
 }
