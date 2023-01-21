@@ -109,10 +109,11 @@ function getValue() {
         gradeValue += (sum1 * Number(sum))
         gradeTotal.push(gradeValue)
         var final = gradeValue / inputValue
+        final = final.toFixed(2)
     }
     container4.innerHTML = inputValue
     container5.innerHTML = gradeValue
-    container6.textContent = final.toFixed(3)
+    container6.textContent = final
     if (Number(final) >= 4.5) {
         container7.textContent = "FirstClass"
     } else if (Number(final) >= 4.0) {
