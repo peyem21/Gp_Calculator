@@ -70,6 +70,7 @@ function getValue() {
         default:
             alert("Grade should be A,B,C,D,E or F")
     }
+    gradeValue = gradeValue * Number(semester1.value)
 
     for (let i = 0; i < addmore; i++) {
         var sum = document.getElementById("input-" + [i]).value
@@ -102,18 +103,30 @@ function getValue() {
             default:
                 alert("Grade should be A,B,C,D,E or F")
         }
-        gradeValue = gradeValue * Number(semester1.value)
+        
         inputValue += Number(sum) 
         inputTotal.push(inputValue)
-        gradeValue += Number(sum1) * Number(sum)
+        gradeValue += (sum1 * Number(sum))
         gradeTotal.push(gradeValue)
-        var final = (gradeValue) / inputValue
+        var final = gradeValue / inputValue
     }
     container4.innerHTML = inputValue
     container5.innerHTML = gradeValue
     container6.textContent = final
+    // if (final >= 4.5) {
+    //     container7.textContent = "FirstClass"
+    // } else if (final >= 4.0) {
+    //     container7.textContent = "SecondClass(Upper)"
+    // } else if (final >= 3.5) {
+    //     container7.textContent = "SecondClass(Lower)"
+    // } else if (final >= 2.5) {
+    //     container7.textContent = "ThirdClass"
+    // } else {
+    //     container7.textContent = "fair"
+    // }
+
 }
-container7.innerHTML = gradeTotal
+
 
 function removeInput() {
   form.reset()
