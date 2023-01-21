@@ -113,17 +113,17 @@ function getValue() {
     container4.innerHTML = inputValue
     container5.innerHTML = gradeValue
     container6.textContent = final
-    // if (final >= 4.5) {
-    //     container7.textContent = "FirstClass"
-    // } else if (final >= 4.0) {
-    //     container7.textContent = "SecondClass(Upper)"
-    // } else if (final >= 3.5) {
-    //     container7.textContent = "SecondClass(Lower)"
-    // } else if (final >= 2.5) {
-    //     container7.textContent = "ThirdClass"
-    // } else {
-    //     container7.textContent = "fair"
-    // }
+    if (Number(final) >= 4.5) {
+        container7.textContent = "FirstClass"
+    } else if (Number(final) >= 4.0) {
+        container7.textContent = "SecondClass(Upper)"
+    } else if (Number(final) >= 3.5) {
+        container7.textContent = "SecondClass(Lower)"
+    } else if (Number(final) >= 2.5) {
+        container7.textContent = "ThirdClass"
+    } else {
+        container7.textContent = "fair"
+    }
 
 }
 
