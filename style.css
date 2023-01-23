@@ -96,6 +96,7 @@ button:hover {
     align-items: center;
     gap: 10px;
     bottom: 8px;
+    margin-top: 20px;
 }
 
 #new-container {
